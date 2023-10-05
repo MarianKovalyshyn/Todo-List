@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1><strong>Tags</strong></h1>
+
+  <table class="table">
+    <tr>
+      <th>Name</th>
+      <th>Update</th>
+      <th>Delete</th>
+    </tr>
+    {% for tag in tag_list %}
+      <tr>
+        <td>{{ tag }}</td>
+        <td>Upd</td>
+        <td>Del</td>
+      </tr>
+    {% endfor %}
+  </table>
+
+{% endblock %}
